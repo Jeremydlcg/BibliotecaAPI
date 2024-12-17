@@ -24,8 +24,7 @@ router.post('/', (req, res) => {
   const { title, authorId, year, available } = req.body;
   
   if (!title || !authorId || !year) {
-    return res.status(400).json({ error: 'Faltan archivos requeridos
-      ' });
+    return res.status(400).json({ error: 'Faltan archivos requeridos' });
   }
 
   const newBook = {
